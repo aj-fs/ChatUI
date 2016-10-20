@@ -126,9 +126,10 @@ $(document).ready(function () {
     }, 350);
   }
 
+
   function scrollBottom() {
     $($inner).animate({
-      scrollTop: $($content).offset().top + $($content).outerHeight(true)
+      scrollTop: $('#content > div').last().position().top+ $($content).outerHeight(true) //$($content).offset().top 
     }, {
       queue: false,
       duration: 'ease'
